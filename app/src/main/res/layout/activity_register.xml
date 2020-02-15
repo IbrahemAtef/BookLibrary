@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_color_login"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_reg_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_back"
+        android:onClick="btn_return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="#444444"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/login_et_background_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email Adress"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <EditText
+        android:id="@+id/et_reg_password"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/login_et_background_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <EditText
+        android:id="@+id/et_reg_ph"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/login_et_background_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <EditText
+        android:id="@+id/et_reg_userName"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/login_et_background_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="User Name"
+        android:inputType="text"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <TextView
+        android:id="@+id/tv_reg_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_color_login"
+        android:onClick="loginActivity"
+        android:padding="8dp"
+        android:text="You have an account?"
+        android:textAllCaps="false"
+        android:textColor="#2d2d2d"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <Button
+        android:id="@+id/btn_reg_sign_up"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#fe3233"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="#f3faff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
